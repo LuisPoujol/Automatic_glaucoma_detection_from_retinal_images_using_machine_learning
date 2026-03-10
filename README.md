@@ -1,0 +1,2 @@
+# Automatic-glaucoma-detection-from-retinal-images-using-machine-learning
+This project develops and compares automated machine learning systems to detect glaucoma from retinal images. Using RIM-ONE dataset, it identifies key features and compares models to classify images as normal or glaucomatous. The objective is to provide clinical decision support, facilitating earlier diagnosis and prevent irreversible vision loss.
