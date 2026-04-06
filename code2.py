@@ -59,7 +59,7 @@ def ProcessImages(input_dir, output_dir):
             fname = img_p.stem
             cv2.imwrite(str(out_path / "images" / f"{fname}_prep.png"), processed)
             np.save(str(out_path / "npy" / f"{fname}.npy"), processed.astype(np.float32)/255.0)
-            print(f"OK: {img_p.name}")
+            print(f"K: {img_p.name}")
         except Exception as e:
             print(f"Error {img_p.name}: {e}")
 
@@ -119,7 +119,7 @@ def ProcessFeatures(input_dir, output_csv, label):
     cols = [c for c in df.columns if c not in ['Filename', 'Label']] + ['Filename', 'Label']
     df = df[cols]
     df.to_csv(output_csv, index=False)
-    print(f"Terminé ! Fichier sauvegardé : {output_csv}")
+    print(f"Fichier sauvegardee : {output_csv}")
 
 if __name__ == "__main__":
     BASE = Path(__file__).parent
